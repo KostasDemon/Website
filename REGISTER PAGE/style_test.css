@@ -36,7 +36,10 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
-/*--------------------*/
+
+/*------------------------------------------------------*/
+/*Обнуление*/
+
 
 body{
 	width: 1920;
@@ -131,7 +134,7 @@ label:hover{
 	font-size: 18px;
 }
 
-button{
+.submit{
 	font-size: 17px;
 	margin-top: 25px;
 	border-radius: 5px;
@@ -141,11 +144,11 @@ button{
 	box-shadow: 0px 3px rgb(97, 97, 97);
 }
 
-button:hover{
+.submit:hover{
 	background-color: rgba(128, 128, 128, 0.25);
 }
 
-button:active{
+.submit:active{
 	box-shadow: 0 2px #666;
 	transform: translateY(1px);
 }
@@ -161,11 +164,122 @@ input{
 
 input:hover{
 	border: 1px solid black;
-	box-shadow: 0.2px 0.2px 2px;
 }
 
 
+/* ------------------------------------------------------------------------------------------*/
+/*SIGN IN BUTTON*/
+
+.signup_whole{
+	margin: 300px 500px;
+}
+
+.upmodal{
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(49, 49, 49, 0.322);
+	z-index: 1;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+
+.upmodal:target{
+	display: block;
+}
+
+.upcontent{
+	min-height: 200px;
+	background-color: white;
+	margin: 15% auto;
+	width: 20%;
+	min-width: 250px;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 3px;
+}
+
+.upshut{
+	float: right;
+	font-size: 25px;
+	font-weight: 900;
+	color: #666;
+}
+
+.upshut:hover{
+	color: black;
+}
+
+.signup-container{
+	font-size: 20px;
+	text-align: center;
+}
+
+.sign-up{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 10px;
+	position: relative;
+}
+
+label{
+	margin-top: 10px;
+}
+
+label:hover{
+	pointer-events: none;
+}
+
+.upemail{
+	position: absolute;
+	margin-top: 5.5px;
+	margin-right: 117px;
+	padding: 0 0.5px;
+	background: #fff;
+	font-size: 18px;
+}
+
+.password{
+	position: absolute;
+	margin-top: 47.5px;
+	margin-right: 90px;
+	padding: 0 0.5px;
+	background: #fff;
+	font-size: 18px;
+}
+
+.upsubmit{
+	font-size: 17px;
+	margin-top: 25px;
+	border-radius: 5px;
+	background-color: white;
+	border: 1.4px solid rgb(97, 97, 97);
+	padding: 2px 4px; 
+	box-shadow: 0px 3px rgb(97, 97, 97);
+}
+
+.upsubmit:hover{
+	background-color: rgba(128, 128, 128, 0.25);
+}
+
+.upsubmit:active{
+	box-shadow: 0 2px #666;
+	transform: translateY(1px);
+}
+
 
 .signin_whole{
-	margin: 300px 500px;
+	margin: 0px 500px;
+	margin-top: 1;
+}
+
+.signup_whole{
+	margin: 0px 500px; 
+	margin-top: 700px;
+}
+
+p{
+	margin: auto 30%;
 }

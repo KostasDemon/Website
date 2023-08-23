@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style_test.css">
 </head>
 <body>
-    <div class="signin_whole">
+    <div class="signup_whole">
         <a class="sign-in-button" href="#modal">Sign In</a>
         <div id="modal" class="modal">
             <div class="content">
@@ -15,6 +15,7 @@
                     <a class="shut" href="#">&times;</a>
                 </div>
                 <div class="signin-container">
+                    <p>Sign Up</p>
                     <form class="sign-in">
                             <label class="email" for="email">Email</label>
                             <input type="text" id="email" name="email" required>
@@ -28,6 +29,29 @@
                             <input type="text" id="confirmation" name="confirmation">
 
                         <button type="submit" class="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="signin_whole">
+        <a class="sign-up-button" href="#upmodal">Sign Up</a>
+        <div id="upmodal" class="upmodal">
+            <div class="upcontent">
+                <div class="upclose">
+                    <a class="upshut" href="#">&times;</a>
+                </div>
+                <div class="signup-container">
+                    <p>Sign In</p>
+                    <form class="sign-up">
+                            <label class="upemail" for="upemail">Email</label>
+                            <input type="text" id="upemail" name="upemail" required>
+
+
+                            <label class="password" for="password">Password</label>
+                            <input type="text" id="password" name="password" required>
+
+                        <button type="submit" class="upsubmit">Submit</button>
                     </form>
                 </div>
             </div>
