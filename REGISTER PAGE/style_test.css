@@ -46,7 +46,6 @@ body{
 	height: 1080;
   	margin: 0;
   	display: grid;
-  	place-items: center;
 }
 
 .modal{
@@ -168,7 +167,7 @@ input:hover{
 
 
 /* ------------------------------------------------------------------------------------------*/
-/*SIGN IN BUTTON*/
+/*SIGN UP BUTTON*/
 
 .signup_whole{
 	margin: 300px 500px;
@@ -269,15 +268,33 @@ label:hover{
 	transform: translateY(1px);
 }
 
+/* ------------------------------------------------------------------------------------------*/
+/*Sign in button*/
 
-.signin_whole{
-	margin: 0px 500px;
-	margin-top: 1;
+
+.register{
+	position: relative;
+	margin: 15% auto;
+	place-items: center;
+	text-align: center;
+	background-color: black;
+	hei
 }
 
 .signup_whole{
-	margin: 0px 500px; 
-	margin-top: 700px;
+	margin: 15% auto;
+	place-items: center;
+	text-align: center;
+	background-color: black;
+	position: absolute;
+}
+
+.signin_whole{
+	margin: 15% auto;
+	place-items: center;
+	text-align: center;
+	background-color: black;
+	position: absolute;
 }
 
 p{
