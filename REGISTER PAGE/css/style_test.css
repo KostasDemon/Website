@@ -44,8 +44,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 body{
 	width: 1920;
 	height: 1080;
-  	margin: 0;
-  	display: grid;
+	margin: 0;
+	display: grid;
+	background-color: rgb(0, 0, 71);
 }
 
 .modal{
@@ -53,6 +54,7 @@ body{
 	width: 100%;
 	height: 100%;
 	background-color: rgba(49, 49, 49, 0.322);
+	background-color: rgba(0, 0, 66, 0.865);
 	z-index: 1;
 	position: fixed;
 	left: 0;
@@ -65,13 +67,13 @@ body{
 
 .content{
 	min-height: 200px;
-	background-color: white;
-	margin: 15% auto;
+	background-color: rgb(255, 255, 255);
+	margin: 17% auto;
 	width: 20%;
 	min-width: 250px;
 	padding: 20px;
-	border-radius: 10px;
-	box-shadow: 1px 1px 3px;
+	border-radius: 20px;
+	box-shadow: 1px 1px 1000px rgb(255, 255, 255);
 }
 
 .shut{
@@ -108,8 +110,8 @@ label:hover{
 
 .email{
 	position: absolute;
-	margin-top: 5.5px;
-	margin-right: 117px;
+	margin-top: 6px;
+	margin-right: 145px;
 	padding: 0 0.5px;
 	background: #fff;
 	font-size: 18px;
@@ -117,8 +119,8 @@ label:hover{
 
 .newpassword{
 	position: absolute;
-	margin-top: 47.5px;
-	margin-right: 53px;
+	margin-top: 46.5px;
+	margin-right: 70px;
 	padding: 0 0.5px;
 	background: #fff;
 	font-size: 18px;
@@ -126,8 +128,8 @@ label:hover{
 
 .confirm{
 	position: absolute;
-	margin-top: 89.5px;
-	margin-right: 25px;
+	margin-top: 87.5px;
+	margin-right: 37px;
 	padding: 0 0.5px;
 	background: #fff;
 	font-size: 18px;
@@ -154,7 +156,7 @@ label:hover{
 
 input{
 	font-size: 17px;
-	border: 1px solid rgb(174, 174, 174);
+	border: 1px solid rgb(0, 0, 0);
 	max-width: 90%;
 	min-width: 20%;
 	border-radius: 3px;
@@ -162,22 +164,22 @@ input{
 }
 
 input:hover{
-	border: 1px solid black;
+	border: 1px solid rgb(147, 147, 147);
+}
+
+p{
+	margin: auto 30%;
 }
 
 
 /* ------------------------------------------------------------------------------------------*/
 /*SIGN UP BUTTON*/
 
-.signup_whole{
-	margin: 300px 500px;
-}
-
 .upmodal{
 	display: none;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(49, 49, 49, 0.322);
+	background-color: rgba(0, 0, 66, 0.865);
 	z-index: 1;
 	position: fixed;
 	left: 0;
@@ -191,12 +193,12 @@ input:hover{
 .upcontent{
 	min-height: 200px;
 	background-color: white;
-	margin: 15% auto;
+	margin: 19% auto;
 	width: 20%;
 	min-width: 250px;
 	padding: 20px;
-	border-radius: 10px;
-	box-shadow: 1px 1px 3px;
+	border-radius: 20px;
+	box-shadow: 1px 1px 1000px rgb(255, 255, 255);
 }
 
 .upshut{
@@ -234,7 +236,7 @@ label:hover{
 .upemail{
 	position: absolute;
 	margin-top: 5.5px;
-	margin-right: 117px;
+	margin-right: 143px;
 	padding: 0 0.5px;
 	background: #fff;
 	font-size: 18px;
@@ -242,8 +244,8 @@ label:hover{
 
 .password{
 	position: absolute;
-	margin-top: 47.5px;
-	margin-right: 90px;
+	margin-top: 46.5px;
+	margin-right: 111px;
 	padding: 0 0.5px;
 	background: #fff;
 	font-size: 18px;
@@ -271,32 +273,84 @@ label:hover{
 /* ------------------------------------------------------------------------------------------*/
 /*Sign in button*/
 
-
-.register{
-	position: relative;
-	margin: 15% auto;
-	place-items: center;
-	text-align: center;
-	background-color: black;
-	hei
+.signin_whole{
+	font-family: 'American Typewriter', serif;
 }
 
 .signup_whole{
-	margin: 15% auto;
-	place-items: center;
-	text-align: center;
-	background-color: black;
-	position: absolute;
+	font-family: 'American Typewriter', serif;
 }
 
-.signin_whole{
-	margin: 15% auto;
-	place-items: center;
-	text-align: center;
-	background-color: black;
-	position: absolute;
+.register{
+	margin: 20% auto;
+	width: 10%;
+	height: 20%;
+	border-radius: 20px;
+	position: relative;
+	padding: 7px;
+	background-color: rgb(175, 162, 255);
+	box-shadow: 1px 1px 50px rgb(254, 254, 255);
 }
 
-p{
-	margin: auto 30%;
+
+
+
+.sign-in-button{
+	font-family: 'American Typewriter', serif;
+	position: absolute;
+	font-size: 20px;
+	color: black;
+	float: left;
+	margin-top: 5%;
 }
+
+.sign-in-button:hover{
+	
+	color: rgba(0, 0, 124, 0.769);
+	/*
+	font-size: 20.5px;
+	transform: translateX(-1px);
+	*/
+}
+
+.sign-up-button:hover{
+	color: rgba(0, 0, 124, 0.769);
+	/*
+	font-size: 20.5px;
+	transform: translateX(1px)
+	*/
+}
+
+.sign-up-button{
+	font-family: 'American Typewriter', serif;
+	position: relative;
+	font-size: 20px;
+	color: black;
+	float: right;
+	margin-top: 85%;
+}
+
+/* ------------------------------------------------------------------------------------------*/
+/*Text-Align*/
+
+.naming{
+	position: fixed;
+	left: 0;
+	top: 0;
+	font-size: 100px;
+	color: rgb(64, 0, 255);
+	font-family: 'American Typewriter', serif;
+	
+}
+
+.naming1{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	font-size: 100px;
+	color: rgb(64, 0, 255);
+	font-family: 'American Typewriter', serif;
+}
+
+
+
